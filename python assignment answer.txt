@@ -1,0 +1,261 @@
+  1)  explain the key features of Python that make it a popular choice for programming?
+
+ans)  Readability and Simplicity:- Python has a clear and easy-to-understand syntax which makes it an excellent language for beginners. Code written in Python is often                                    more readable than code written in other languages.
+
+      Interpreted Language:-      Python is an interpreted language, meaning that it executes code line by line, which makes debugging easier and development faster.
+
+      Dynamic Typing:-            In Python, you don’t have to declare the type of a variable when you create one. The type is determined at runtime, which simplifies                                   code and makes it more flexible.
+
+      Extensive Standard Library:- Python comes with a large standard library that supports many common programming tasks such as file handling, internet protocols,                                    string operations, and more.
+
+      Cross-Platform:-            Python can run on various operating systems, including Windows, Mac, and Linux without requiring significant changes to the code.
+
+      Versatile:-                 Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+
+      Community and Libraries:-   Python has a massive community and a vast array of third-party libraries, frameworks, and tools that extend its capabilities for web                                   development, data science, artificial intelligence, and more.
+
+
+  2)  Describe the role of predefined keywords in Python and provide examples of how they are used in a program?
+
+ans)   Definition:-   Predefined keywords are reserved words in Python that have special meaning and cannot be used as identifiers (names for variables, functions,                       etc.). They are integral to the syntax and structure of the language.
+
+      Examples and Usage:-
+
+                        if, elif, else: Used for conditional statements.
+
+                                         python
+                                         Copy code
+                                                  if x > 0:
+                                                         print("Positive")
+                                                  elif x == 0:
+                                                         print("Zero")
+                                                  else:
+                                                         print("Negative")
+                                                  if x > 0:
+                                                         print("Positive")
+                                                  elif x == 0:
+                                                         print("Zero")
+                                                   else:
+                                                         print("Negative")
+                       for, while: Used for loops:-
+                                                  python
+                                                   Copy code
+                                                             for i in range(5):
+                                                                      print(i)
+                                    def: Used to define functions:-
+                                                                    python
+                                                                    Copy code
+                                                                    def greet(name):
+                                                                           print(f"Hello, {name}")
+                                    class: Used to define classes:-
+                                                                     python
+                                                                     Copy code
+                                                                      class Dog:
+                                                                      def __init__(self, name):
+                                                                      self.name = name
+                                                                      import: Used to import modules.
+                                                                      python
+                                                                      Copy code
+                                                                      import math
+                                                                      print(math.sqrt(16))
+
+
+
+  3)   Compare and contrast mutable and immutable ob ects in Python with examples?
+
+ans)    Mutable Objects:- Objects whose value can be changed after they are created.
+
+        Examples:-        Lists, dictionaries, sets.
+                          python
+                         Copy code
+                         list1 = [1, 2, 3]
+                         list1.append(4)  # list1 is now [1, 2, 3, 4]
+
+     Immutable Objects:-  Objects whose value cannot be changed once they are created.
+
+      Examples:-           Strings, tuples, integers, floats.
+                            python
+                            Copy code
+                            str1 = "hello"
+                            str1[0] = 'H'  # This will raise a TypeError
+
+
+
+  4)   Discuss the different types of operators in Python and provide examples of how they are used?
+
+ans)   Arithmetic Operators:- Used for mathematical operations.
+
+                               python
+                               Copy code
+                               a = 5
+                               b = 2
+                               print(a + b)  # 7
+                               print(a - b)  # 3
+                               print(a * b)  # 10
+                               print(a / b)  # 2.5
+                               print(a % b)  # 1
+                               print(a ** b)  # 25
+
+   Comparison Operators:-  Used to compare two values.
+
+                            python
+                            Copy code
+                            a = 5
+                            b = 2
+                            print(a == b)  # False
+                            print(a != b)  # True
+                            print(a > b)  # True
+                            print(a < b)  # False
+                            print(a >= b)  # True
+                            print(a <= b)  # False
+
+   Logical Operators:-  Used to combine conditional statements.
+
+                           python
+                           Copy code
+                           a = True
+                           b = False
+                           print(a and b)  # False
+                           print(a or b)  # True
+                           print(not a)  # False
+
+   Assignment Operators:-  Used to assign values to variables.
+
+                           python
+                           Copy code
+                           a = 5
+                           a += 2  # Equivalent to a = a + 2
+                           print(a)  # 7
+
+  Bitwise Operators:-    Used to perform bitwise operations.
+
+                          python
+                          Copy code
+                          a = 5  # 101 in binary
+                          b = 3  # 011 in binary
+                          print(a & b)  # 1 (001 in binary)
+                          print(a | b)  # 7 (111 in binary)
+                          print(a ^ b)  # 6 (110 in binary)
+                          print(~a)  # -6 (inverts all bits)
+                          print(a << 1)  # 10 (1010 in binary)
+                          print(a >> 1)  # 2 (10 in binary)
+
+
+
+  5)   explain the concept of type casting in Python with examples?
+
+ans)   Definition:-   Type casting is converting one data type to another. This can be done using built-in functions.
+
+       Examples:-
+
+                 Implicit Type Casting:-  Python automatically converts one data type to another.
+
+                                               python
+                                               Copy code
+                                               a = 5
+                                               b = 2.5
+                                               c = a + b  # a is automatically converted to float
+                                               print(c)  # 7.5
+
+                 Explicit Type Casting:-   Manually converting one data type to another using functions like int(), float(), str(), etc.
+
+                                               python
+                                               Copy code
+                                               a = "123"
+                                               b = int(a)  # Converts string to integer
+                                               print(b)  # 123
+                                               c = float(b)  # Converts integer to float
+                                               print(c)  # 123.0
+                                               d = str(c)  # Converts float to string
+                                               print(d)  # "123.0"
+
+
+
+  6)  How do conditional statements work in Python? Illustrate with examples?
+
+ans)   Definition:-  Conditional statements are used to execute different blocks of code based on certain conditions.
+
+        Examples:-
+
+         if Statement:-
+                        python
+                        Copy code
+                        a = 10
+                        if a > 0:
+                            print("Positive number")
+                        if-else Statement:
+                        python
+                        Copy code
+                        a = -10
+                        if a > 0:
+                           print("Positive number")
+                        else:
+                           print("Negative number")
+
+     if-elif-else Statement:-
+                             python
+                             Copy code
+                             a = 0
+                             if a > 0:
+                                  print("Positive number")
+                             elif a == 0:
+                                   print("Zero")
+                             else:
+                                   print("Negative number")
+
+
+
+  7)    Describe the different types of loops in Python and their use cases with examples?
+
+ans)     For Loop:-    Used to iterate over a sequence (like a list, tuple, or string) or other iterable objects.
+
+                                         python
+                                         Copy code
+                                         for i in range(5):
+                                                   print(i)
+                     # Output: 0 1 2 3 4
+                                         Use Case: Ite rating over a range of numbers, a list, or any other iterable.
+
+         While Loop:-    Repeats as long as a certain condition is true.
+
+                                        python
+                                        Copy code
+                                        i = 0
+                                        while i < 5:
+                                               print(i)
+                                         i += 1
+                     # Output: 0 1 2 3 4
+                                         Use Case: When the number of iterations is not known beforehand and depends on a condition.
+
+         Nested Loops:-    Loops inside another loop.
+
+                                         python
+                                         Copy code
+                                         for i in range(3):
+                                             for j in range(2):
+                                                    print(f"i: {i}, j: {j}")
+                      # Output: 
+                                     # i: 0, j: 0
+                                     # i: 0, j: 1
+                                     # i: 1, j: 0
+                                     # i: 1, j: 1
+                                     # i: 2, j: 0
+                                     # i: 2, j: 1
+                     Use Case:-     When dealing with multi-dimensional data structures like matrices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
